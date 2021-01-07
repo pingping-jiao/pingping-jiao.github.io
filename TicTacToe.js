@@ -8,7 +8,7 @@ function setCookie(cname, cvalue, exdays) {
 }
 
 setCookie("foo", "a-b-c", 3);
-
+setCookie("cookie-test", "a-b-c", 3);
 var cells = document.getElementsByTagName("td");
 // var cellOne = document.querySelectorAll("td")[0];
 // Hover (mouseover and mouseout)
