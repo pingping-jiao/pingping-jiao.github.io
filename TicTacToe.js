@@ -1,4 +1,4 @@
-dtrum.enable();
+//dtrum.enable();
 //Let's explore some events samples!
 //add cookie function
 function setCookie(cname, cvalue, exdays) {
