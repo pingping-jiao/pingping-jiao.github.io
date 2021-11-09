@@ -22,6 +22,6 @@ function xhrLoad2() {
     }
   };
 
-  xhttp.open("GET", "www.dynatrace.com", true);
+  xhttp.open("GET", "https://www.dynatrace.com/", true);
   xhttp.send();
 }
