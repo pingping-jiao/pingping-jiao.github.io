@@ -8,7 +8,7 @@ function xhrLoad1() {
     }
   };
 
-  xhttp.open("GET", "www.google.com", true);
+  xhttp.open("GET", "connect-four.html", true);
   xhttp.send();
 }
 
@@ -22,6 +22,6 @@ function xhrLoad2() {
     }
   };
 
-  xhttp.open("GET", "https://www.dynatrace.com/", true);
+  xhttp.open("GET", "css.html", true);
   xhttp.send();
 }
