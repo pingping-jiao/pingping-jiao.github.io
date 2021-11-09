@@ -27,6 +27,14 @@
 <h1>Hello</h1>
 <p>click the button to allow session replay</p>
 <a src="javascript:void(0)" class="btn btn-primary" id="session">CLICK</a>
+  
+  <p>
+      <a data-ta="fake-link" test="fakeAttribute" href="javascript:void(0)" onclick="xhrLoad1()">link me</a>
+    </p>
+  
+  <p>
+      <button data-ta="submit" onclick="xhrLoad2()">Click me to execute an XHR</button>
+    </p>
 </div>
 </div>
     </div>
@@ -39,11 +47,5 @@
    dtrum.enableSessionReplay();    })}
 </script>
   
-  <p>
-      <a data-ta="fake-link" test="fakeAttribute" href="javascript:void(0)" onclick="xhrLoad1()">link me</a>
-    </p>
   
-  <p>
-      <button data-ta="submit" onclick="xhrLoad2()">Click me to execute an XHR</button>
-    </p>
 </html>
