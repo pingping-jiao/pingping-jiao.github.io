@@ -8,7 +8,7 @@ function xhrLoad1() {
     }
   };
 
-  xhttp.open("GET", "xhr.txt", true);
+  xhttp.open("GET", "www.google.com", true);
   xhttp.send();
 }
 
@@ -22,6 +22,6 @@ function xhrLoad2() {
     }
   };
 
-  xhttp.open("GET", "xhr2.txt", true);
+  xhttp.open("GET", "www.dynatrace.com", true);
   xhttp.send();
 }
