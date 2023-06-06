@@ -64,7 +64,7 @@
   <script>
     console.error("test errors");
     var actionId = dtrum.enterAction('custom action while page still loading', null, null, null);
-  dtrum.reportCustomError("error created during page loading","error created during page loading");
+  dtrum.reportCustomError("error created during page loading","error created during page loading",null,true);
     
 
 </script>
@@ -80,7 +80,7 @@
     
     
   setTimeout(() => {
- dtrum.reportCustomError("error created during custom action creation","error created during custom action creation");
+ dtrum.reportCustomError("error created during custom action creation","error created during custom action creation",null,true);
       
       dtrum.leaveAction(actionId )
 }, "3000");
