@@ -98,7 +98,7 @@ let data = {
   "Customer": "Jason Sweet",
 };
 
-xhr.onload = () => console.error("/api/json Request failed: " + xhr.status);
+xhr.onload = () => console.log( xhr.status);
   
 xhr.send(data);
   
