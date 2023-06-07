@@ -49,9 +49,9 @@
         <a src="javascript:void(0)" id="css-tester" href="css-tester.html" class="btn btn-primary btn-lg"role="button">CSS Tester!</a>
       <div class="banner" style="padding:15px; text-align:center;">
 <div class="banner-content">
-<h1>Hello</h1>
-<p>click the button to allow session replay</p>
-<a onclick="enableSR()" class="btn btn-primary" id="session">CLICK</a>
+
+  
+  
   
   <p>
       <a data-ta="fake-link" test="fakeAttribute" href="javascript:void(0)" onclick="xhrLoad1()">link me</a>
@@ -62,6 +62,14 @@
     <script>
 function functionName(){
 window.open("css.html");
+}
+</script>
+    
+    
+     <button data-ta="submit" onclick="functionName1()">Click me to load a non-existing page</button>
+    <script>
+function functionName1(){
+window.open("css1.html");
 }
 </script>
     
