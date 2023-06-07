@@ -88,7 +88,7 @@ xhr.send();
     
      <button data-ta="submit" onclick="functionName1()">Click me to create a failed xhr request</button>
     <script>
-function functionName1(){
+function functionName1() {
 let xhr = new XMLHttpRequest();
 
 xhr.open("POST", "/api/json");
@@ -99,7 +99,7 @@ let data = {
 };
 
 xhr.onload = () => console.log(xhr.status);
-  if ((xhr.status > 200}
+  if ((xhr.status > 200)
   {
 xhr.onerror = () => console.error("/api/json Request failed: " + xhr.status);
   }
