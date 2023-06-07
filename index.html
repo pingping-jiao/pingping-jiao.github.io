@@ -99,7 +99,10 @@ let data = {
 };
 
 xhr.onload = () => console.log(xhr.status);
+  if ((xhr.status > 200}
+  {
 xhr.onerror = () => console.error("/api/json Request failed: " + xhr.status);
+  }
 xhr.send(data);
   
 }
