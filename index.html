@@ -79,7 +79,7 @@ xhr.onreadystatechange = () => {
   }
 };
 
-xhr.onerror = () => console.log("Request failed");
+xhr.onerror = () => console.error("Request failed");
 
 xhr.send();
 }
@@ -99,7 +99,7 @@ let data = {
 };
 
 xhr.onload = () => console.log(xhr.status);
-
+xhr.onerror = () => console.error("/api/json Request failed: " + xhr.status);
 xhr.send(data);
   
 }
