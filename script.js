@@ -15,13 +15,6 @@ function xhrLoad1() {
 function xhrLoad2() {
   var xhttp = new XMLHttpRequest();
 
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      // Typical action to be performed when the document is ready:
-      document.getElementById("xhr2").innerHTML = xhttp.responseText;
-    }
-  };
-
   xhttp.open("GET", "css.html", true);
   xhttp.send();
 }
