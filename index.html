@@ -61,7 +61,27 @@
       <button data-ta="submit" onclick="functionName()">Click me to execute an XHR</button>
     <script>
 function functionName(){
-window.open("css.html","_self");
+let xhr = new XMLHttpRequest();
+
+xhr.open("GET", "https://reqbin.com/echo/get/json");
+
+xhr.onload = () => {
+  if (xhr.status != 200) { 
+    console.log(`Error ${xhr.status}: ${xhr.statusText}`);
+  } else {
+    console.log(xhr.response.length);
+  }
+};
+
+xhr.onreadystatechange = () => {
+  if (xhr.readyState === 4) {
+    console.log(xhr.responseText);
+  }
+};
+
+xhr.onerror = () => console.log("Request failed");
+
+xhr.send();
 }
 </script>
     
