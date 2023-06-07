@@ -4,7 +4,7 @@ function xhrLoad1() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       // Typical action to be performed when the document is ready:
-      document.getElementById("xhr").innerHTML = xhttp.responseText;
+      document.getElementById("xhr1").innerHTML = xhttp.responseText;
     }
   };
 
@@ -18,7 +18,7 @@ function xhrLoad2() {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       // Typical action to be performed when the document is ready:
-      document.getElementById("xhr").innerHTML = xhttp.responseText;
+      document.getElementById("xhr2").innerHTML = xhttp.responseText;
     }
   };
 
