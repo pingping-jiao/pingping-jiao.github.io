@@ -66,10 +66,22 @@ window.open("css.html","_self");
 </script>
     
     
-     <button data-ta="submit" onclick="functionName1()">Click me to load a non-existing page</button>
+     <button data-ta="submit" onclick="functionName1()">Click me to create a failed xhr request</button>
     <script>
 function functionName1(){
-window.open("css1.html","_self");
+let xhr = new XMLHttpRequest();
+
+xhr.open("POST", "/api/json");
+
+let data = {
+  "Id": 78912,
+  "Customer": "Jason Sweet",
+};
+
+xhr.onload = () => console.log(xhr.status);
+
+xhr.send(data);
+  
 }
 </script>
     
