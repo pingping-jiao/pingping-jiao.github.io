@@ -85,10 +85,10 @@ var custom_action = dtrum.enterAction("enter a new action while clicking");
    console.log("custom_action = "+custom_action);
   var action;
   
-  
+   setTimeout(function(){
    action = dtrum.enterXhrAction('some xhr', 1,"somexhrnowait.test");
     console.log("action = "+action);
-
+   },1000);
 
   
 xhr.send();
