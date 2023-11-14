@@ -81,8 +81,10 @@ xhr.onreadystatechange = () => {
 };
 
 xhr.onerror = () => console.error("Request failed");
-
+var action = dtrum.enterXhrAction('startDownloadInsertSetFunction xhr', 1,'test.json');
 xhr.send();
+
+  
 }
 </script>
     
