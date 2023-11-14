@@ -91,8 +91,10 @@ var custom_action = dtrum.enterAction("enter a new action while clicking");
 }, 2000);
   
 xhr.send();
-//dtrum.leaveAction(custom_action);
-  
+   setTimeout(function(){
+     dtrum.leaveXhrAction(action);
+dtrum.leaveAction(custom_action);
+   },2000);
 }
 </script>
     
