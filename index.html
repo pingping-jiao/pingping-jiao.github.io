@@ -84,9 +84,10 @@ xhr.onerror = () => console.error("Request failed");
 var custom_action = dtrum.enterAction("enter a new action while clicking");
   setTimeout(function(){
    var action = dtrum.enterXhrAction('startDownloadInsertSetFunction xhr', 1,'test.json');
-}, 2000);
-  console.log("action = "+action);
+    console.log("action = "+action);
  dtrum.leaveXhrAction(action)
+}, 2000);
+  
 xhr.send();
 dtrum.leaveAction(custom_action);
   
