@@ -83,9 +83,10 @@ xhr.onreadystatechange = () => {
 xhr.onerror = () => console.error("Request failed");
 var custom_action = dtrum.enterAction("enter a new action while clicking");
    console.log("custom_action = "+custom_action);
+  var action;
   setTimeout(function(){
   
-   var action = dtrum.enterXhrAction('some xhr', 1);
+   action = dtrum.enterXhrAction('some xhr', 1);
     console.log("action = "+action);
 
 }, 2000);
