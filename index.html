@@ -19,8 +19,8 @@ dynatrace.sendBizEvent('tagging.users', attributes);
 document.cookie = "int=3";
       document.cookie = "decimals=3.1234567";
       console.error("test error");
-        var actionId = dtrum.enterAction('500 Long name: custom action while page still loading,custom action while page still loading,custom action while page still loading,custom action while page still loading,custom action while page still loading,custom action while page still loading,custom action while page still loading,custom action while page still loading', null, null, null);
- dtrum.reportCustomError("500 Long name: error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading","error created during page loading",null,true);
+     //   var actionId = dtrum.enterAction('500 Long name: custom action while page still loading,custom action while page still loading,custom action while page still loading,custom action while page still loading,custom action while page still loading,custom action while page still loading,custom action while page still loading,custom action while page still loading', null, null, null);
+// dtrum.reportCustomError("500 Long name: error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading,error created during page loading","error created during page loading",null,true);
     
     </script>
     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDodf==" />
@@ -85,7 +85,8 @@ var custom_action = dtrum.enterAction("enter a new action while clicking");
   setTimeout(function(){
    var action = dtrum.enterXhrAction('startDownloadInsertSetFunction xhr', 1,'test.json');
 }, 2000);
-
+  console.log("action = "+action);
+ dtrum.leaveXhrAction(action)
 xhr.send();
 dtrum.leaveAction(custom_action);
   
@@ -135,10 +136,10 @@ xhr.send(data);
     
     
   setTimeout(() => {
- dtrum.reportCustomError("error created during custom action creation","error created during custom action creation",null,true);
+/* dtrum.reportCustomError("error created during custom action creation","error created during custom action creation",null,true);
       
       dtrum.leaveAction(actionId )
-}, "500");
+}, "500");*/
 </script>
   
   <script type="module" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/app/689d6d7.modern.js" ></script>
