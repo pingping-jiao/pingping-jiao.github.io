@@ -70,6 +70,7 @@ document.cookie = "int=3";
       <button data-ta="submit" onclick="functionName()">Click me to execute an XHR</button>
     <script>
 function functionName(){
+  var custom_action_on_click = dtrum.enterAction("enter a new action while clicking to execute an XHR");
 let xhr = new XMLHttpRequest();
 
 xhr.open("GET", "https://reqbin.com/echo/get/json");
@@ -104,6 +105,7 @@ xhr.send();
      dtrum.leaveXhrAction(action);
 dtrum.leaveAction(custom_action);
    },3000);
+  dtrum.leaveAction(custom_action_on_click);
 }
 </script>
     
@@ -139,13 +141,7 @@ xhr.send(data);
 
 </script>
   
-  <img class="a-image" loading="lazy" alt="All in one platform default bg" width="2448" height="600" style="object-position: 50% 50%; max-width: nullpx" src="https://mkt-cdn.dynatrace.com/assets/Marketing/marketecture/all-in-one-platform-default-bg.svg">
-  <img class="a-image" loading="lazy" alt="All in one platform default supported technologies" width="2448" height="600" style="object-position: 50% 50%; max-width: nullpx" src="https://mkt-cdn.dynatrace.com/assets/Marketing/marketecture/all-in-one-platform-default-supported-technologies.svg">
-  <img class="a-image" loading="lazy" alt="All in one platform default dt platform" width="2448" height="600" style="object-position: 50% 50%; max-width: nullpx" src="https://mkt-cdn.dynatrace.com/assets/Marketing/marketecture/all-in-one-platform-default-dt-platform.svg">
-  <img class="a-image" loading="lazy" alt="All in one platform default custom apps" width="2448" height="600" style="object-position: 50% 50%; max-width: nullpx" src="https://mkt-cdn.dynatrace.com/assets/Marketing/marketecture/all-in-one-platform-default-custom-apps.svg">
-  <img class="a-image" loading="lazy" alt="All in one platform default custom apps" width="2448" height="600" style="object-position: 50% 50%; max-width: nullpx" src="https://mkt-cdn.dynatrace.com/assets/Marketing/marketecture/all-in-one-platform-default-custom-apps.svg">
-  <img class="a-image" loading="lazy" alt="All in one platform default custom apps" width="2448" height="600" style="object-position: 50% 50%; max-width: nullpx" src="https://mkt-cdn.dynatrace.com/assets/Marketing/marketecture/all-in-one-platform-default-custom-apps.svg">
-  <script nomodule="" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/app/daaddf9.js" ></script>
+<script nomodule="" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/app/daaddf9.js" ></script>
  <script>
     
     
@@ -156,12 +152,5 @@ xhr.send(data);
 //}, "500");
 </script>
   
-  <script type="module" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/app/689d6d7.modern.js" ></script>
-  <script type="module" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/chunk/8967bd0.modern.js"></script>
-  <script type="module" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/chunk/a1d67f0.modern.js" ></script>
-  <script type="module" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/chunk/cc7b2bd.modern.js"></script>
-  <script nomodule="" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/chunk/cfb8717.js"></script>
-  <script type="module" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/chunk/3cb457a.modern.js" ></script>
-  <script nomodule="" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/chunk/7d55600.js"></script>
-  <script nomodule="" src="https://mkt-cdn.dynatrace.com/marketing_main/_nuxt/chunk/7d55600.js" ></script>
+  
 </html>
