@@ -7,7 +7,7 @@ function setCookie(cname, cvalue, exdays) {
   var expires = "expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
+document.getElementById("test").value = 0;
 setCookie("foo", "a-b-c", 3);
 setCookie("cookie-test", "a-b-c", 3);
 var cells = document.getElementsByTagName("td");
