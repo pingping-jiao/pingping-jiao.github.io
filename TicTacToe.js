@@ -15,7 +15,7 @@ catch(err) {
       console.error(err);
 }
 
-document.getElementById("testaa").value = 0;
+adsfas
 
 setCookie("foo", "a-b-c", 3);
 setCookie("cookie-test", "a-b-c", 3);
