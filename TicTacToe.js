@@ -13,6 +13,7 @@ try {
 }
 catch(err) {
       console.error(err);
+  dtrum.reportError("test reportError method");
 }
 
 adsfas
