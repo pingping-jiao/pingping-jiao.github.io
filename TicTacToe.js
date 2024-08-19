@@ -12,8 +12,8 @@ try {
     document.getElementById("test").value = 0;
 }
 catch(err) {
-      console.error(err);
-  dtrum.reportError("test reportError method");
+ 
+  dtrum.reportError(err);
 }
 
 adsfas
