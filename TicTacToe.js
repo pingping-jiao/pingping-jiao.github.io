@@ -12,7 +12,7 @@ try {
     document.getElementById("test").value = 0;
 }
 catch(err) {
-      console.log(err);
+      console.error(err);
 }
 
 
