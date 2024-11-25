@@ -1,6 +1,17 @@
-<head> 
-<script type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/15c157a40ab/bf95489cqg/67290a3bebb431b3_complete.js" crossorigin="anonymous"></script>
-     </head>
-<frameset cols="pixels|%|*">
-    test content
+<!DOCTYPE html>
+<html>
+<head>
+   <title>HTML Frames</title>
+     <script type="text/javascript" src="https://js-cdn.dynatrace.com/jstag/15c157a40ab/bf95489cqg/67290a3bebb431b3_complete.js" crossorigin="anonymous"></script>
+</head>
+<frameset rows="10%,80%,10%">
+   <frame name="top" src="/html/top_frame.htm" />
+   <frame name="main" src="/html/main_frame.htm" />
+   <frame name="bottom" src="/html/bottom_frame.htm" />
+   <noframes>
+      <body>
+         Your browser does not support frames.
+      </body>
+   </noframes>
 </frameset>
+</html>
